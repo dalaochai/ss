@@ -9,8 +9,8 @@
 ******/
 [Script]
 /**** # ～ RevenueCat@ddgksf2013. ****/
-RevenueCatVip = type=http-response, pattern=https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/dalaochai/ss/main/Purelibro.js, requires-body=true, max-size=-1, timeout=60
-RevenueCatDeleteHeader = type=http-request, pattern=https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/dalaochai/ss/main/Purelibro.js, timeout=60
+RevenueCatVip = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/dalaochai/ss/main/Purelibro.js, requires-body=true, max-size=-1, timeout=60
+RevenueCatDeleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/dalaochai/ss/main/Purelibro.js, timeout=60
 
 [MITM]
 hostname = %APPEND% api.revenuecat.com
