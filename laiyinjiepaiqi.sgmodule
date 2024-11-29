@@ -1,0 +1,8 @@
+#!name=laiyinjiepaiqi
+#!desc=laiyinjiepaiqi
+
+[Script]
+laiyinjiepaiqi = type=http-response, pattern=https://metronome-api\.quthing\.com/(login/mobile|vip/state), script-path=https://raw.githubusercontent.com/szeminglee/Rewrite/main/laiyinjiepaiqi.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% metronome-api.quthing.com
